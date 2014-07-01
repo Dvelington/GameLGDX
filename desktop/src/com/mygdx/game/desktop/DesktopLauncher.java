@@ -7,6 +7,7 @@ import com.mygdx.game.MyGdxGame;
 public class DesktopLauncher {
 	public static void main (String[] arg) {
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
-		new LwjglApplication(new MyGdxGame(), config);
+                config.useGL30 = true;
+		new LwjglApplication(new MyGdxGame(),"Ball",480,320);
 	}
 }
