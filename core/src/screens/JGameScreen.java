@@ -33,14 +33,13 @@ public class JGameScreen implements Screen
 
     @Override
     public void resize(int width, int height) {
-        ;
-        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        _renderer.setSize(width, width);
     }
 
     @Override
     public void show() {
         _world = new JWorld();
-        _renderer = new JWorldRenderer(_world);
+        _renderer = new JWorldRenderer(_world,false);
     }
 
     @Override

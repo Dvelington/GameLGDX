@@ -15,7 +15,7 @@ import com.badlogic.gdx.math.Vector2;
  */
 public class JBlock {
     
-    static final float SIZE = 1f;
+    public static final float SIZE = 1f;
 
     public Vector2 _position = new Vector2();
     public Rectangle _bounds = new Rectangle();
